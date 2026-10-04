@@ -12,7 +12,7 @@
 
 int main(int argc, char** argv)
 {
-    if (argc < 4 || argv[1] == "--help" || argv[1] == "-h")
+    if (argc < 4 || strcmp(argv[1], "--help") == 0 || strcmp(argv[1], "-h") == 0)
     {
         printf("Usage: ./png2raw file.png output.raw rgb|rgba\n");
         return 1;
